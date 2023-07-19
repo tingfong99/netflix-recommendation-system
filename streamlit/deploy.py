@@ -3,9 +3,9 @@ import pandas as pd
 import streamlit as st
 from sklearn.metrics.pairwise import cosine_similarity
 
-df = pd.read_csv('clean_data.csv')
+df = pd.read_csv('streamlit/clean_data.csv')
 df.drop(columns=df.columns[0], axis=1, inplace=True)
-X = np.load('X.npy')
+X = np.load('streamlit/X.npy')
 cos_sim_data = pd.DataFrame(cosine_similarity(X))
 
 st.title("Netflix Recommender System")
