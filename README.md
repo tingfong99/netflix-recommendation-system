@@ -10,4 +10,6 @@ EDA performed:
 
 Recommendation System: 
 1. Content Based on Genres 
-2. BERT algorithm on Descriptions
+2. BERT algorithm on Descriptions and Genres
+
+Deploy using streamlit
